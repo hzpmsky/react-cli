@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import JSX from './components/demo/jsx.js';
+import Props from './components/demo/props.js';
+import StateDemo from './components/demo/state.js';
+import LifeCycle from './components/demo/life-cycle.js';
+import Form from './components/demo/form.js';
 
 class App extends Component {
   render() {
+    const personObj = {name:'Vokowfoi',number:18923467237}
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <JSX></JSX>
+        <hr/>
+        <Props personObj={personObj} enjoy ={['basetball', 'football','pinpang']}></Props>
+        <hr/>
+        <StateDemo></StateDemo>
+        <LifeCycle></LifeCycle>
+        <hr/>
+        <Form></Form>
       </div>
     );
   }
