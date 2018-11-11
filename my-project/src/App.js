@@ -6,6 +6,7 @@ import Props from './components/demo/props.js';
 import StateDemo from './components/demo/state.js';
 import LifeCycle from './components/demo/life-cycle.js';
 import Form from './components/demo/form.js';
+import Example01 from './components/demo/example/example'
 
 class App extends Component {
   render() {
@@ -20,6 +21,8 @@ class App extends Component {
         <LifeCycle></LifeCycle>
         <hr/>
         <Form></Form>
+        <hr/>
+        <Example01></Example01>
       </div>
     );
   }
